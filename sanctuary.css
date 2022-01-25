@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:rgb(5, 4, 80);
+}
+
+/* NAVBAR SECTION */
+.containar{
+    display: flex;
+    
+    height: 100px;
+}
+
+
+/* logo */
+.logo img{
+    height:100px ;
+     width:75px;
+}
+
+/* Navigation Bar */
+.containar ul{
+    display: flex;
+    margin: 45px 10px;
+   
+   
+}
+
+.containar ul li{
+    padding: 2px 30px;
+    list-style: none ;
+}
+.containar ul li a{
+    text-decoration: none;
+    margin: 2px 40px;
+    font-size: 1.3rem;
+    color: white;
+    border: 1px solid gray;
+    background-color: rgb(194, 182, 182);
+    border-radius: 8px;  
+}
+
+.containar ul li a:hover{
+    background-color: gray;
+    /* font-size: 25px; */
+
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+   
+
+.dropbtn{
+    color: white;
+    padding: 7px;
+    margin: 40px 10px;
+    background-color: rgb(245, 126, 79);
+    /* border: 2px solid hotpink; */
+    border-radius: 15px;
+    font-size: 15px;
+    
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,2);
+    z-index: 1;
+
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:block;
+}
+.dropdown-content a:hover{
+    background: #ddd;
+}
+
+.dropdown:hover .dropdown-content{
+   display: block;
+}
+.dropdown:hover .dropbtn{
+    background: #c4c7c4;
+ }
+
+
+  .presentation{
+     color: white;
+    margin: 30px 40px;
+    padding: 20px 30px;
+ } 
+
+ .presentation{
+     display: inline-block;
+     font-family: 'Bree Serif', serif;
+     /* height: 500px;
+     width: 900px; */
+    }
+    .media{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Bree Serif', serif;
+        color: white;
+        margin: 9px 40px;
+        padding: 8px 30px;
+        
+    }
+
+    .hilight{
+        display: flex;
+        text-align: center;
+    }
+
+    .box{
+        background: white;
+        margin: 10px 50px;
+        padding: 10px 50px;
+        border-radius: 15px;
+        box-shadow: 10px 10px 20px rgb(153, 151, 151) ;
+        /* height: 500px; */
+        animation-name: box-flip; 
+        animation-duration: 1s;
+       
+    }
+
+    @keyframes box-flip{
+        from{
+            background-color: white;
+           
+        }
+        to{
+            background-color:red;
+        }
+    }
+
+    
+    
+
+
+    .foot{
+        /* background: rgb(8, 8, 8); */
+        margin: 40px 0px;
+        padding: 20px 10px;
+        color: white;
+    }
